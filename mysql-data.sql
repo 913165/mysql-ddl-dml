@@ -1,5 +1,5 @@
 docker run -d -p 3306:3306 --name mysql-container -e MYSQL_ROOT_PASSWORD=root123 mysql:latest
-docker exec -it <containerid> bash
+docker exec -it mysql-container bash
 create database usersdb;
 use usersdb;
 -- Create users table with the new 'city' column
