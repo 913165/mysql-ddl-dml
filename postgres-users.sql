@@ -9,13 +9,17 @@ CREATE TABLE users (
     role VARCHAR(50) NOT NULL,
     city VARCHAR(50) DEFAULT 'New York' NOT NULL
 );
--- Inserting a user with specific values
-INSERT INTO users (firstname, lastname, email, role) VALUES ('John', 'Doe', 'john.doe@example.com', 'user');
--- Inserting another user
-INSERT INTO users (firstname, lastname, email, role) VALUES ('Jane', 'Smith', 'jane.smith@example.com', 'admin');
--- Inserting a third user
-INSERT INTO users (firstname, lastname, email, role) VALUES ('Alice', 'Johnson', 'alice.johnson@example.com', 'user');
--- Inserting a fourth user
-INSERT INTO users (firstname, lastname, email, role) VALUES ('Bob', 'Williams', 'bob.williams@example.com', 'user');
--- Inserting a fifth user
-INSERT INTO users (firstname, lastname, email, role) VALUES ('Eva', 'Brown', 'eva.brown@example.com', 'admin');
+-- Inserting a user with specific values including city
+INSERT INTO users (firstname, lastname, email, role, city) VALUES ('John', 'Doe', 'john.doe@example.com', 'user', 'New York');
+
+-- Inserting another user with city
+INSERT INTO users (firstname, lastname, email, role, city) VALUES ('Jane', 'Smith', 'jane.smith@example.com', 'admin', 'New York');
+
+-- Inserting a third user with city
+INSERT INTO users (firstname, lastname, email, role, city) VALUES ('Alice', 'Johnson', 'alice.johnson@example.com', 'user', 'New York');
+
+-- Inserting a fourth user with city
+INSERT INTO users (firstname, lastname, email, role, city) VALUES ('Bob', 'Williams', 'bob.williams@example.com', 'user', 'New York');
+
+-- Inserting a fifth user with city
+INSERT INTO users (firstname, lastname, email, role, city) VALUES ('Eva', 'Brown', 'eva.brown@example.com', 'admin', 'New York');
